@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:onClick="summary"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/oldTweetsList"
+        android:layout_width="fill_parent"
+        android:layout_height="263dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+
+    </ListView>
+    
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal" />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="email"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="@string/savetodo" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="todos"
+        android:text="ToDo List" />
+    
+    <Button
+        android:id="@+id/archive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="archive"
+        android:text="Archived List" />
+
+    <Button
+        android:id="@+id/summ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="summary"
+        android:text="Summary" />
+
+</LinearLayout>
